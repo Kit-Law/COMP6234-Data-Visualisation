@@ -1,8 +1,8 @@
 const data = {
-    labels: ["2009/10", "2010/11", "2011/12", "2012/13", "2013/14", "2014/15", "2015/16", "2016/17", "2017/18", "2018/19", "2019/20"],
+    labels: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
     datasets: [
       {
-        data: [142219, 211783, 266666, 292404, 365577, 440288, 524725, 616961, 710562, 875663, 1022040],
+        data: [32.9, 31.8, 31, 30.1, 29.1, 27.6, 26.9, 25.6, 25, 24.1, 21, 20.9, 20.3, 20.1, 19.9, 20, 20.8, 20.2, 20.4, 21.4, 23.1, 24.3],
         backgroundColor: '#BF9A93',
         borderColor: '#806762',
         borderWidth: 2
@@ -17,6 +17,10 @@ const options = {
   },
   scales: {
     xAxes: [{
+      ticks: {
+        autoSkip: true,
+        maxTicksLimit: 10
+      },
       scaleLabel: {
         display: true,
         fontSize: 24,
@@ -27,14 +31,22 @@ const options = {
       scaleLabel: {
         display: true,
         fontSize: 24,
-        labelString: 'Number of admissions'
+        labelString: '% of the Population'
       }
     }]
   },
   title: {
     display: true,
     fontSize: 44,
-    text: 'Finished Admission Episodes with a Primary or Secondary Diagnosis of Obesity in the UK'
+    text: 'Undernourishment in Developing Countries'
+  },
+  tooltips: {
+    callbacks: {
+        label: function(tooltipItem, data) {
+            const currentValue = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+            return `${currentValue}%`;
+        }
+    }
   }
 };
 
