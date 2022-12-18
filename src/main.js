@@ -36,6 +36,13 @@ var hideButton = {
       ],
 };
 
+var showHeatmap = {
+  targets: '#container',
+  opacity: [
+    { value: [0, 1], duration: 500, easing: 'easeInSine' }
+      ],
+};
+
 intro.add(showTitle).add(showButton);
 outro.add(hideTitle);
 
