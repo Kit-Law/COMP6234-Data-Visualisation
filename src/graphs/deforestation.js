@@ -1,4 +1,4 @@
-anychart.onDocumentReady(function() {
+function plotDeforestation() {
     // create map
     var map = anychart.map();
   
@@ -40,7 +40,6 @@ anychart.onDocumentReady(function() {
     
     var slider = document.getElementById("myRange");
 
-
     data = anychart.data.set(datasets[0])
     series = map.choropleth(data);
         
@@ -69,4 +68,4 @@ anychart.onDocumentReady(function() {
             data.append(datasets[this.value][i]);
         }
     }
-});
+};

@@ -1,4 +1,4 @@
-anychart.onDocumentReady(function () {
+function plotEmissionSkankey() {
   
     // add data
     const data = [
@@ -38,9 +38,9 @@ anychart.onDocumentReady(function () {
     chart.title('Emissions by Product');
 
     // set the chart container id
-    chart.container("container");
+    chart.container("emissionsSkankey");
 
     // draw the chart
     chart.draw();
 
-  });
+  };
