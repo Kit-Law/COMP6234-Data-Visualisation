@@ -20,6 +20,9 @@ var hideTitle = {
   opacity: [
     { value: [1, 0], duration: 500, easing: 'easeOutSine' }
       ],
+  complete: function(anim) {
+    window.location.href = "page1.html";
+  } 
 };
 
 var showButton = {
@@ -33,13 +36,6 @@ var hideButton = {
   targets: '#next-button',
   opacity: [
     { value: [1, 0], duration: 500, easing: 'easeInSine' }
-      ],
-};
-
-var showHeatmap = {
-  targets: '#container',
-  opacity: [
-    { value: [0, 1], duration: 500, easing: 'easeInSine' }
       ],
 };
 
