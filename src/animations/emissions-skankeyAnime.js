@@ -14,7 +14,7 @@ var showText = {
 };
 
 var showGraph = {
-  targets: '#container',
+  targets: '#emissionsSkankey',
   translateY: [ 
     { value: window.innerHeight / 5, duration: 1000, easing: 'easeOutSine' }
       ],
@@ -38,7 +38,7 @@ var hideText = {
 };
 
 var hideGraph = {
-  targets: '#container',
+  targets: '#emissionsSkankey',
   opacity: [
     { value: [1, 0], duration: 500, easing: 'easeOutSine' }
       ],
@@ -56,11 +56,11 @@ const prevButton = document.querySelector("#prev-button");
 var page;
 
 nextButton.addEventListener("click", function () {
-  page = "land-use-cropland.html";
+  page = "undernourishment.html";
   outro.play();
  });
 
  prevButton.addEventListener("click", function () {
-  page = "../index.html";
+  page = "emissions.html";
   outro.play();
  });

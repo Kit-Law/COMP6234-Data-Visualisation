@@ -50,17 +50,11 @@ var hideGraph = {
 intro.add(showText).add(showGraph).add(showButton);
 outro.add(hideText).add(hideGraph);
 
-const nextButton = document.querySelector("#next-button");
 const prevButton = document.querySelector("#prev-button");
 
 var page;
 
-nextButton.addEventListener("click", function () {
-  page = "land-use-cropland.html";
-  outro.play();
- });
-
  prevButton.addEventListener("click", function () {
-  page = "../index.html";
+  page = "undernourishment.html";
   outro.play();
  });

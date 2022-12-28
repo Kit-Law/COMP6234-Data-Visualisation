@@ -1,4 +1,3 @@
-function plotSoyConsumption() {
 
     const data = {
     labels: [
@@ -77,5 +76,3 @@ function plotSoyConsumption() {
     const soyConsumption = new Chart(ctx, config);
 
     soyConsumption.update();
-
-};

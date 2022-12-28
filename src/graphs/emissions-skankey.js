@@ -1,5 +1,4 @@
-function plotEmissionSkankey() {
-  
+
     // add data
     const data = [
       {from: "Plants", to: "Cereals", weight: 23.4},
@@ -42,5 +41,3 @@ function plotEmissionSkankey() {
 
     // draw the chart
     chart.draw();
-
-  };

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vegans Cause Climate Change</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body> 
+  <div style="display: flex; justify-content: center;">
+    <div class="text" id="text">
+      <p> Oer all the hilltops<br>
+      Is quiet now,<br>
+      In all the treetops<br>
+      Hearest thou<br>
+      Hardly a breath;<br>
+      The birds are asleep in the trees:<br>
+      Wait, soon like these<br>
+      Thou too shalt rest.
+      </p>
+    </div>
+    <div class="graph" id="container"><canvas id="undernourishmentGraph"></canvas></div>
+  </div>
+
+  <div class="nav-bar">
+    <div class="next">
+      <button class="button" id="next-button"><span>Next </span></button>
+    </div>
+    <div class="pre">
+      <button class="button" id="prev-button"><span>Prevoius </span></button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+  <script src="../graphs/undernourishment.js"></script>
+  <script src="../animations/undernourishmentAnime.js"></script>
+</body>
+</html>

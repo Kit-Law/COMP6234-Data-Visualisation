@@ -21,7 +21,7 @@ var hideTitle = {
     { value: [1, 0], duration: 500, easing: 'easeOutSine' }
       ],
   complete: function(anim) {
-    window.location.href = "pages/page1.html";
+    window.location.href = "pages/deforestation.html";
   } 
 };
 

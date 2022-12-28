@@ -56,11 +56,11 @@ const prevButton = document.querySelector("#prev-button");
 var page;
 
 nextButton.addEventListener("click", function () {
-  page = "land-use-cropland.html";
+  page = "emissions.html";
   outro.play();
  });
 
  prevButton.addEventListener("click", function () {
-  page = "../index.html";
+  page = "land-use.html";
   outro.play();
  });
