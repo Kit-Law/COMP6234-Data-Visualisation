@@ -76,9 +76,17 @@ sup {
   padding-bottom: 1.5em;
 }
 
+.nav-bar .pre {
+  position:absolute;
+  bottom:0;
+  right:1;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 button {
   height: 60px;
-  width: 130px;
+  width: 160px;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 24pt;
   background-color: #666666;
@@ -90,7 +98,7 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .button span {
@@ -128,6 +136,21 @@ legend {
 
 progress {
   vertical-align: baseline;
+}
+
+.graph {
+  opacity: 0;
+  display: inline-block;
+  width:500px;
+  height:400px
+}
+
+.text {
+  opacity: 0;
+  display: inline-block;
+  font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
+  font-size: 18pt;
+  color: #666666;
 }
 
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {

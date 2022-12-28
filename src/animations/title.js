@@ -21,7 +21,7 @@ var hideTitle = {
     { value: [1, 0], duration: 500, easing: 'easeOutSine' }
       ],
   complete: function(anim) {
-    window.location.href = "page1.html";
+    window.location.href = "pages/page1.html";
   } 
 };
 
@@ -32,19 +32,11 @@ var showButton = {
       ],
 };
 
-var hideButton = {
-  targets: '#next-button',
-  opacity: [
-    { value: [1, 0], duration: 500, easing: 'easeInSine' }
-      ],
-};
-
 intro.add(showTitle).add(showButton);
 outro.add(hideTitle);
 
 const nextButton = document.querySelector("#next-button");
 
 nextButton.addEventListener("click", function () {
-  anime(hideButton);
   outro.play();
  });
