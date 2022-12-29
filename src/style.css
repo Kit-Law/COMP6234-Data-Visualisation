@@ -95,6 +95,7 @@ button {
   border: none;
   text-align: center;
   padding: 5px;
+  padding-bottom: 10px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -158,12 +159,31 @@ progress {
   height:1000px;
 }
 
+.colourKeyElements {
+	line-height: 85px;
+	margin-top: 220px;
+	width:20px;
+  	height:350px;
+  	font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
+  	font-size: 11pt;
+ 	color: #666666;
+}
+
+.colourKey {
+	margin-top: 260px;
+	width:20px;
+  	height:350px;
+    background: linear-gradient(to bottom, #72C963, #000000);
+}
+
 .text {
   opacity: 0;
   width: 35%;
+  height: 420px;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 18pt;
   color: #666666;
+  overflow: hidden;
 }
 
 .lowerText {
@@ -173,11 +193,11 @@ progress {
   left: 25%;
   margin-top: -50px;
   width: 50%;
-  height: 100px;
-  word-wrap:break-word;
+  height: 20%;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 18pt;
   color: #666666;
+  overflow: hidden;
 }
 
 .upperText {
@@ -187,11 +207,11 @@ progress {
   left: 25%;
   margin-top: -50px;
   width: 50%;
-  height: 100px;
-  word-wrap:break-word;
+  height: 15%;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 18pt;
   color: #666666;
+  overflow: hidden;
 }
 
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {

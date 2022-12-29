@@ -56,6 +56,9 @@ function plotDeforestation() {
     //set map container id (div)
     map.container('container');
 
+    map.title('Deforestation in the Brazilian Rainforest');
+    map.title().fontSize(24);
+
     //initiate map drawing
     map.draw();
 

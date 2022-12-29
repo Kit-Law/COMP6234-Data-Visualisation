@@ -41,6 +41,7 @@
 
     // add a title
     chart.title('Emission Intensities by Product');
+    map.title().fontSize(24);
 
     // set the chart container id
     chart.container("emissionsSkankey");
