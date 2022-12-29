@@ -160,6 +160,7 @@ progress {
 
 .text {
   opacity: 0;
+  width: 35%;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 18pt;
   color: #666666;

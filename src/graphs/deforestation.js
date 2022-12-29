@@ -49,7 +49,6 @@ function plotDeforestation() {
     // set map color settings
     series.colorScale(anychart.scales.linearColor('#72C963', '#000000').minimum(0).maximum(100));
 
-
     // set geo data, you can find this map in our geo maps collection
     // https://cdn.anychart.com/#maps-collection
     map.geoData(anychart.maps['brazil']);
