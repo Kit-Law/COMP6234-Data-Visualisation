@@ -8,7 +8,7 @@
         label: 'Global Soy Consumtion by Species Type',
         data: [20, 80],
         backgroundColor: [
-        '#5CFF96',
+        '#70d45f',
         '#FF6166'
         ],
         hoverOffset: 4

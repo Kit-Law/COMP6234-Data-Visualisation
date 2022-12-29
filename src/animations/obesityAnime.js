@@ -47,11 +47,17 @@ var hideGraph = {
 intro.add(showText).add(showGraph);
 outro.add(hideText).add(hideGraph);
 
+const nextButton = document.querySelector("#next-button");
 const prevButton = document.querySelector("#prev-button");
 
 var page;
 
- prevButton.addEventListener("click", function () {
+prevButton.addEventListener("click", function () {
   page = "undernourishment.html";
+  outro.play();
+ });
+
+ nextButton.addEventListener("click", function () {
+  page = "end.html";
   outro.play();
  });
