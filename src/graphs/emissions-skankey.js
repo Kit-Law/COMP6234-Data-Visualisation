@@ -17,7 +17,7 @@
       {from: "Eggs and Milk", to: "Cattle", weight: 0.57},
       {from: "Eggs and Milk", to: "Buffalo", weight: 0.58},
       {from: "Eggs and Milk", to: "Chicken", weight: 0.33},
-      {from: "Eggs and Milk", to: "Cammel Milk", weight: 2.44}
+      {from: "Eggs and Milk", to: "Camel Milk", weight: 2.44}
     ];
 
     // create a sankey diagram instance
@@ -41,7 +41,7 @@
 
     // add a title
     chart.title('Emission Intensities by Product');
-    map.title().fontSize(24);
+    chart.title().fontSize(24);
 
     // set the chart container id
     chart.container("emissionsSkankey");
