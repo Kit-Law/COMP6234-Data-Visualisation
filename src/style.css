@@ -214,3 +214,58 @@ progress {
 [hidden] {
   display: none;
 }
+
+.slider {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.ticks {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 9px;
+
+  position: absolute;
+  top: 71%;
+  left: 25%;
+  width: 49%;
+}
+.tick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1px;
+  background: gray;
+  
+  height: 10px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}

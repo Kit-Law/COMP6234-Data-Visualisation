@@ -47,7 +47,7 @@ function plotDeforestation() {
     series.geoIdField('id');
 
     // set map color settings
-    series.colorScale(anychart.scales.linearColor('#72C963', '#5D0300').minimum(0).maximum(100));
+    series.colorScale(anychart.scales.linearColor('#72C963', '#000000').minimum(0).maximum(100));
 
 
     // set geo data, you can find this map in our geo maps collection
@@ -62,10 +62,10 @@ function plotDeforestation() {
 
     // Update the current slider value (each time you drag the slider handle)
     slider.oninput = function() {
-        for (let i = 0; i < datasets[this.value].length; i++)
+        for (let i = 0; i < datasets[this.value - 1988].length; i++)
         {
             data.remove(0);
-            data.append(datasets[this.value][i]);
+            data.append(datasets[this.value - 1988][i]);
         }
     }
 };
