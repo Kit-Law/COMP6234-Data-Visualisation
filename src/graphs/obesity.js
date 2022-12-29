@@ -4,7 +4,7 @@
       datasets: [
         {
           data: [142219, 211783, 266666, 292404, 365577, 440288, 524725, 616961, 710562, 875663, 1022040],
-          backgroundColor: '#BF9A93',
+          backgroundColor: '#4a3f3f',
           borderColor: '#806762',
           borderWidth: 2
         }

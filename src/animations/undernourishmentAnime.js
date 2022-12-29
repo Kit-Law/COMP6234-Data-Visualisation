@@ -5,9 +5,6 @@ var outro = anime.timeline({
 
 var showText = {
   targets: '#text',
-  translateY: [ 
-    { value: window.innerHeight / 4, duration: 1000, easing: 'easeOutSine' }
-      ],
   opacity: [
     { value: [0, 1], duration: 800, easing: 'easeInSine' }
       ],
@@ -16,7 +13,7 @@ var showText = {
 var showGraph = {
   targets: '#container',
   translateY: [ 
-    { value: window.innerHeight / 5, duration: 1000, easing: 'easeOutSine' }
+    { value: window.innerHeight / 10, duration: 1000, easing: 'easeOutSine' }
       ],
   opacity: [
     { value: [0, 1], duration: 800, easing: 'easeInSine' }
@@ -47,7 +44,7 @@ var hideGraph = {
   } 
 };
 
-intro.add(showText).add(showGraph).add(showButton);
+intro.add(showText).add(showGraph);
 outro.add(hideText).add(hideGraph);
 
 const nextButton = document.querySelector("#next-button");

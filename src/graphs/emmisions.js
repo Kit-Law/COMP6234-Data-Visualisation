@@ -91,7 +91,7 @@ scales: {
 title: {
   display: true,
   fontSize: 44,
-  text: 'Emissions intensities'
+  text: 'Total Emissions by Product'
 }
 };
 

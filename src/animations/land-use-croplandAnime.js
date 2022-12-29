@@ -3,24 +3,21 @@ var outro = anime.timeline({
   autoplay: false
 });
 
-var showText = {
-  targets: '#text',
+var showGraph = {
+  targets: '#container',
   translateY: [ 
-    { value: window.innerHeight / 4, duration: 1000, easing: 'easeOutSine' }
+    { value: window.innerHeight / 10, duration: 1000, easing: 'easeOutSine' }
       ],
   opacity: [
     { value: [0, 1], duration: 800, easing: 'easeInSine' }
       ],
 };
 
-var showGraph = {
-  targets: '#container',
-  translateY: [ 
-    { value: window.innerHeight / 5, duration: 1000, easing: 'easeOutSine' }
-      ],
+var showText = {
+  targets: '#text',
   opacity: [
     { value: [0, 1], duration: 800, easing: 'easeInSine' }
-      ],
+      ]
 };
 
 var showButton = {

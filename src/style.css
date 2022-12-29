@@ -140,14 +140,54 @@ progress {
 
 .graph {
   opacity: 0;
-  display: inline-block;
   width:500px;
-  height:400px
+  height:400px;
+}
+
+.lineGraph {
+  opacity: 0;
+  width:1000px;
+  height:400px;
+}
+
+.pieGraph {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  width:1000px;
+  height:1000px;
 }
 
 .text {
   opacity: 0;
-  display: inline-block;
+  font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
+  font-size: 18pt;
+  color: #666666;
+}
+
+.lowerText {
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  margin-top: -50px;
+  width: 50%;
+  height: 100px;
+  word-wrap:break-word;
+  font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
+  font-size: 18pt;
+  color: #666666;
+}
+
+.upperText {
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  margin-top: -50px;
+  width: 50%;
+  height: 100px;
+  word-wrap:break-word;
   font-family: "Google Sans Display", 'Roboto', 'Arial', 'sans-serif';
   font-size: 18pt;
   color: #666666;

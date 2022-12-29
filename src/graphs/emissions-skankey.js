@@ -1,23 +1,23 @@
 
     // add data
     const data = [
-      {from: "Plants", to: "Cereals", weight: 23.4},
-      {from: "Cereals", to: "Cereals Excluding Rice", weight: 7.52},
-      {from: "Cereals", to: "Rice", weight: 15.9},
-      {from: "Animals", to: "Meat", weight: 75.1},
-      {from: "Animals", to: "Eggs and Milk", weight: 24.8},
-      {from: "Meat", to: "Sheep", weight: 4.57},
-      {from: "Meat", to: "Goats", weight: 4.04},
-      {from: "Meat", to: "Cattle", weight: 39.0},
-      {from: "Meat", to: "Buffalo", weight: 4.95},
-      {from: "Meat", to: "Chicken", weight: 1.27},
-      {from: "Meat", to: "Pig Meat", weight: 3.79},
-      {from: "Eggs and Milk", to: "Sheep", weight: 1.12},
-      {from: "Eggs and Milk", to: "Goats", weight: 0.98},
-      {from: "Eggs and Milk", to: "Cattle", weight: 13.2},
-      {from: "Eggs and Milk", to: "Buffalo", weight: 2.53},
-      {from: "Eggs and Milk", to: "Chicken", weight: 0.913},
-      {from: "Eggs and Milk", to: "Cammel Milk", weight: 0.24}
+      {from: "Plants", to: "Cereals", weight: 0.75},
+      {from: "Cereals", to: "Cereals Excluding Rice", weight: 0.11},
+      {from: "Cereals", to: "Rice", weight: 0.65},
+      {from: "Animals", to: "Meat", weight: 90.6},
+      {from: "Animals", to: "Eggs and Milk", weight: 8.68},
+      {from: "Meat", to: "Sheep", weight: 14.3},
+      {from: "Meat", to: "Goats", weight: 20.4},
+      {from: "Meat", to: "Cattle", weight: 17.8},
+      {from: "Meat", to: "Buffalo", weight: 36.6},
+      {from: "Meat", to: "Chicken", weight: 0.33},
+      {from: "Meat", to: "Pig Meat", weight: 1.07},
+      {from: "Eggs and Milk", to: "Sheep", weight: 3.28},
+      {from: "Eggs and Milk", to: "Goats", weight: 1.48},
+      {from: "Eggs and Milk", to: "Cattle", weight: 0.57},
+      {from: "Eggs and Milk", to: "Buffalo", weight: 0.58},
+      {from: "Eggs and Milk", to: "Chicken", weight: 0.33},
+      {from: "Eggs and Milk", to: "Cammel Milk", weight: 2.44}
     ];
 
     // create a sankey diagram instance
@@ -33,8 +33,14 @@
     // set the chart's padding
     chart.padding(20, 60);
 
+    chart.node().tooltip().format("{%value}%");
+    chart.flow().tooltip().format("{%value}%");
+
+    chart.node().normal().fill("#FF6166 0.5");
+    chart.node().hovered().fill(anychart.color.darken("#FF6166"));
+
     // add a title
-    chart.title('Emissions by Product');
+    chart.title('Emission Intensities by Product');
 
     // set the chart container id
     chart.container("emissionsSkankey");
